@@ -29,9 +29,9 @@
           role="navigation"
           aria-label="Main navigation"
         >
-          <a href="#home" class="nav-link">Home</a>
-          <a href="#about" class="nav-link">About</a>
-          <a href="#contact" class="nav-link">Contact</a>
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
         </nav>
       </header>
       <section class="hero" id="home">
@@ -64,35 +64,10 @@
           aria-label="GIF results"
         ></section>
       </main>
-      <section class="about" id="about">
-        <h2>About</h2>
-        <p>
-          Gifs-R-Us is a simple, responsive web page that lets you search for
-          GIFs using the Giphy API. Whether you're looking for a laugh, a
-          reaction, or just something fun, we've got you covered!
-        </p>
-      </section>
-      <section class="contact" id="contact">
-        <h2>Contact</h2>
-        <p>
-          Questions or feedback? Email us at
-          <a href="mailto:info@gifsrus.com">info@gifsrus.com</a>.
-        </p>
-      </section>
       <footer class="footer">
         <p>&copy; 2025 Gifs-R-Us. All rights reserved.</p>
       </footer>
     </div>
     <script src="./js/main.js"></script>
-    <script>
-      // Hamburger menu toggle
-      const navToggle = document.querySelector(".nav-toggle");
-      const nav = document.getElementById("main-nav");
-      navToggle.addEventListener("click", function () {
-        const expanded = navToggle.getAttribute("aria-expanded") === "true";
-        navToggle.setAttribute("aria-expanded", !expanded);
-        nav.classList.toggle("nav-open");
-      });
-    </script>
   </body>
 </html>
