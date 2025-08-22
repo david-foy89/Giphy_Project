@@ -98,7 +98,7 @@ body {
 button[type="submit"] {
   padding: 0.5rem 1.5rem;
   font-size: clamp(1rem, 3vw, 2rem);
-  color: #fff;
+  color: #0a0606;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -169,7 +169,7 @@ button[type="submit"] {
   border-top: 1px solid #e0dede;
 }
 .nav-toggle {
-  display: none;
+  display: none !important;
   background: none;
   border: none;
   cursor: pointer;
@@ -206,17 +206,17 @@ button[type="submit"] {
   top: 9px;
 }
 .hamburger::before {
-  content: '';
+  content: "";
   top: 0;
 }
 .hamburger::after {
-  content: '';
+  content: "";
   top: 18px;
 }
 
 @media (max-width: 800px) {
   .nav-toggle {
-    display: flex;
+    display: flex !important;
   }
   .nav {
     position: absolute;
@@ -226,7 +226,7 @@ button[type="submit"] {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
     padding: 1rem 2rem;
     min-width: 160px;
