@@ -15,8 +15,8 @@ A simple, responsive web app that lets users search for GIFs using the Giphy API
 ## Technologies Used
 
 - HTML
-- CSS (SASS/SCSS)
-- JavaScript (ES6)
+- CSS
+- JavaScript
 - Giphy API
 - Google Fonts
 
