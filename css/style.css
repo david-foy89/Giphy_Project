@@ -33,34 +33,43 @@ html {
 
 body {
   font-family: "Kanit", sans-serif;
-  background: #f2e9e4;
+  background: #fff; /* White background */
   margin: 0;
   padding: 0;
+  color: #1a1a1a; /* Dark text for contrast */
 }
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background: #22223b;
-  color: #fff;
+  justify-content: center; /* Center all header content horizontally */
+  background: #000; /* Black header */
+  padding: 1.5rem 2rem;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 8px rgba(128, 0, 128, 0.08); /* Purple shadow */
   position: relative;
 }
 .site-title {
+  flex: 1;
+  text-align: center;
+  margin: 0;
   font-family: "Kanit", sans-serif;
-  font-size: 6rem;
   font-size: clamp(2rem, 6vw, 4rem);
+  color: #a259e6; /* Purple */
 }
 .nav {
   display: flex;
   gap: 1.5rem;
-  background: #f8f6f8;
+  background: #fff; /* White nav background */
   border-radius: 6px;
   padding: 0.5rem 1.5rem;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1px 4px rgba(128, 0, 128, 0.03); /* Purple shadow */
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .nav-link {
-  color: #22223b;
+  color: #a259e6; /* Purple */
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
@@ -69,8 +78,8 @@ body {
   transition: background 0.2s, color 0.2s;
 }
 .nav-link:hover {
-  background: #e0dede;
-  color: #9a8c98;
+  background: #a259e6; /* Purple */
+  color: #fff; /* White text on hover */
 }
 #search-input,
 .search-form button[type="submit"] {
@@ -88,16 +97,18 @@ body {
 #search-input {
   padding: 0.5rem 1rem;
   font-size: clamp(1rem, 4vw, 2rem);
-  border: 1px solid #9a8c98;
+  border: 2px solid #a259e6; /* Purple border */
   border-radius: 4px;
   flex: 1 1 200px;
   width: 100%;
   max-width: 500px;
   box-sizing: border-box;
+  background: #fff;
+  color: #1a1a1a;
 }
 button,
 button[type="submit"] {
-  background: #9a8c98;
+  background: #a259e6; /* Purple */
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -106,14 +117,15 @@ button[type="submit"] {
   font-weight: 600;
   cursor: pointer;
   margin-top: 0.5rem;
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.2s;
   font-family: inherit;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1px 4px rgba(128, 0, 128, 0.03);
   display: inline-block;
 }
 button:hover,
 button[type="submit"]:hover {
-  background: #22223b;
+  background: #000; /* Black on hover */
+  color: #a259e6; /* Purple text on hover */
 }
 .gif-grid {
   display: grid;
@@ -130,24 +142,28 @@ button[type="submit"]:hover {
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(128, 0, 128, 0.1);
   display: block;
+  border: 2px solid #a259e6; /* Purple border */
+  background: #fff;
 }
 .hero {
-  background: #fff;
+  background: #a259e6; /* Purple hero section */
+  color: #fff;
   padding: 2.5rem 1rem 2rem 1rem;
   text-align: center;
   border-radius: 0 0 12px 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 8px rgba(128, 0, 128, 0.04);
   margin-bottom: 2rem;
 }
 .hero h2 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
+  color: #fff;
 }
 .hero p {
   font-size: 1.3rem;
-  color: #444;
+  color: #f3e9ff;
 }
 .about,
 .contact {
@@ -156,12 +172,13 @@ button[type="submit"]:hover {
   padding: 2rem 1rem;
   border-radius: 8px;
   max-width: 700px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1px 4px rgba(128, 0, 128, 0.03);
 }
 .about h2,
 .contact h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  color: #a259e6; /* Purple */
 }
 .about p,
 .contact p {
@@ -171,13 +188,14 @@ button[type="submit"]:hover {
 .footer {
   text-align: center;
   padding: 1.5rem 0 1rem 0;
-  color: #888;
+  color: #fff;
   font-size: 1rem;
-  background: #f2e9e4;
+  background: #a259e6; /* Purple footer */
   margin-top: 2rem;
-  border-top: 1px solid #e0dede;
+  border-top: 1px solid #a259e6;
 }
 .nav-toggle {
+  /* Hamburger menu button */
   display: none !important;
   background: none;
   border: none;
@@ -192,18 +210,10 @@ button[type="submit"]:hover {
   align-items: center;
   justify-content: center;
 }
-.hamburger {
-  display: inline-block;
-  width: 28px;
-  height: 22px;
-  position: relative;
-  background: none;
-  border: none;
-}
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  background: #fff;
+  background: #a259e6; /* Purple */
   border-radius: 2px;
   height: 3px;
   width: 28px;
@@ -223,7 +233,7 @@ button[type="submit"]:hover {
   top: 18px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   .nav-toggle {
     display: flex !important;
   }
@@ -235,7 +245,7 @@ button[type="submit"]:hover {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 8px rgba(128, 0, 128, 0.08);
     border-radius: 8px;
     padding: 1rem 2rem;
     min-width: 160px;
@@ -248,11 +258,8 @@ button[type="submit"]:hover {
   .header {
     position: relative;
   }
-}
-
-@media (max-width: 800px) {
   .nav-link {
-    color: #22223b;
+    color: #a259e6;
     font-size: 1.2rem;
     padding: 0.7rem 0;
     width: 100%;
@@ -330,20 +337,20 @@ button[type="submit"]:hover {
   padding: 2rem 1.5rem;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 12px rgba(128, 0, 128, 0.06);
   gap: 1.2rem;
 }
 .contact-form label {
   align-self: flex-start;
   font-weight: 600;
   margin-bottom: 0.2rem;
-  color: #22223b;
+  color: #a259e6; /* Purple */
 }
 .contact-form input,
 .contact-form textarea {
   width: 100%;
   padding: 0.7rem 1rem;
-  border: 1px solid #9a8c98;
+  border: 1px solid #a259e6;
   border-radius: 5px;
   font-size: 1rem;
   font-family: inherit;
@@ -353,11 +360,11 @@ button[type="submit"]:hover {
 }
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border: 1.5px solid #22223b;
+  border: 1.5px solid #a259e6;
   outline: none;
 }
 .contact-form button[type="submit"] {
-  background: #9a8c98;
+  background: #a259e6;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -366,8 +373,14 @@ button[type="submit"]:hover {
   font-weight: 600;
   cursor: pointer;
   margin-top: 0.5rem;
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.2s;
 }
 .contact-form button[type="submit"]:hover {
-  background: #22223b;
+  background: #000;
+  color: #a259e6;
+}
+.site-logo {
+  height: 80px;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
