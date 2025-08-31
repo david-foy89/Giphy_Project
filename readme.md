@@ -1,43 +1,48 @@
-# Giphy Search Engine
+# Gifs-R-Us
 
-**Author:** David Foy
+## Author
+
+David Foy
 
 ## Overview
 
-Giphy Search Engine is a modern, responsive website that lets users search for GIFs using the Giphy API. The site features a classic multi-page layout with Home, About, and Contact pages, a welcoming hero section, and a clean, user-friendly design. All pages use a unique Google Font and consistent button styling for a cohesive look.
+Gifs-R-Us is a responsive, multi-page website for searching, viewing, and downloading GIFs using the Giphy API. Users can search for GIFs, view trending GIFs, and download any GIF directly. The site features a modern, accessible design with a black, white, and purple color scheme, a consistent header and navigation on all pages, and a contact form.
 
 ## Features
 
-- Search for GIFs by keyword using the Giphy API
-- Responsive grid layout for GIF results
-- Hamburger menu navigation on mobile
-- Classic webpage sections: Home, About, Contact
-- Contact form for user feedback
-- Consistent, modern button styles across all pages
-- Fully responsive for desktop, tablet, and mobile
+- **Search GIFs:** Enter a keyword to find relevant GIFs from Giphy.
+- **Trending GIFs:** View the latest trending GIFs right on the homepage.
+- **Download GIFs:** Download any GIF with a single click.
+- **Responsive Design:** Works and looks great on desktop, tablet, and mobile.
+- **Hamburger Menu:** Navigation collapses into a hamburger menu on smaller screens.
+- **Multi-page Layout:** Includes Home, About, and Contact pages.
+- **Contact Form:** Users can send a message via the contact page.
+- **Consistent Branding:** Logo and color scheme are consistent across all pages.
 
 ## How to Use
 
-1. Enter a search term in the input field on the Home page.
-2. Click the "Search" button.
-3. Browse the GIFs that appear below.
-4. Use the navigation menu to visit the About or Contact pages.
-5. On the Contact page, fill out the form to send a message.
+1. **Search:** Enter a keyword in the search bar and click "Search" to view GIFs.
+2. **Navigate:** Use the navigation bar or hamburger menu to visit About or Contact pages.
+3. **Contact:** Fill out the contact form to send a message.
 
 ## Technologies Used
 
-- HTML
-- CSS (with SASS/SCSS)
-- JavaScript (ES6)
-- Giphy API
-- Google Fonts
+- HTML5
+- CSS3 (with custom responsive design)
+- JavaScript (Vanilla)
+- [Giphy API](https://developers.giphy.com/)
+- Google Fonts (Kanit)
 
 ## Ideas for Future Improvement
 
-1. Add pagination or infinite scroll for more results.
-2. Allow users to favorite and save GIFs.
-3. Add light/dark mode toggle.
-4. Add trending GIFs on homepage.
-5. Add error handling for network/API issues.
-6. Integrate a backend to process contact form submissions.
-7. Add user authentication for personalized features.
+1. Add user authentication and favorites functionality.
+2. Allow users to upload their own GIFs.
+3. Add pagination or infinite scroll for search results.
+4. Add dark/light mode toggle.
+5. Display GIF details (title, uploader, etc.) on click.
+
+## Live Demo
+
+---
+
+Thank you for using Gifs-R-Us.
