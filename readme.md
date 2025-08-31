@@ -43,6 +43,6 @@ Gifs-R-Us is a responsive, multi-page website for searching, viewing, and downlo
 
 ## Live Demo
 
----
+## https://david-foy89.github.io/Giphy_Project/index.html
 
 Thank you for using Gifs-R-Us.
