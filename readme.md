@@ -11,8 +11,6 @@ Gifs-R-Us is a responsive, multi-page website for searching, viewing, and downlo
 ## Features
 
 - **Search GIFs:** Enter a keyword to find relevant GIFs from Giphy.
-- **Trending GIFs:** View the latest trending GIFs right on the homepage.
-- **Download GIFs:** Download any GIF with a single click.
 - **Responsive Design:** Works and looks great on desktop, tablet, and mobile.
 - **Hamburger Menu:** Navigation collapses into a hamburger menu on smaller screens.
 - **Multi-page Layout:** Includes Home, About, and Contact pages.
