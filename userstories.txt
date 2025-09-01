@@ -1,0 +1,5 @@
+As a potential user I want to be able to easily search for GIFs.
+
+As a potential user I want to be able to contact the site about feedback and with questions. 
+
+As a potential user I want to be able to see what the site is about. 
